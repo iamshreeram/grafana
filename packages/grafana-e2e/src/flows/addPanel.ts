@@ -26,7 +26,7 @@ export const addPanel = (config?: Partial<AddPanelConfig>): any =>
 
     const { dashboardUid, dataSourceName, panelTitle, queriesForm, visualizationName } = fullConfig;
 
-    e2e.flows.openDashboard(dashboardUid);
+    e2e.pages.Dashboard.visit(dashboardUid);
     e2e.pages.Dashboard.Toolbar.toolbarItems('Add panel').click();
     e2e.pages.AddDashboard.addNewPanel().click();
 
