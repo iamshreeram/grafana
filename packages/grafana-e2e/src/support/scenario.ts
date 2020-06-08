@@ -36,7 +36,7 @@ export const e2eScenario = ({
       });
 
       afterEach(() => Flows.revertAllChanges());
-      after(() => e2e().clearCookies());
+      after(() => Flows.logout());
 
       it(itName, () => scenario());
 

@@ -5,6 +5,7 @@ import { assertSuccessNotification } from './assertSuccessNotification';
 import { deleteDashboard } from './deleteDashboard';
 import { deleteDataSource } from './deleteDataSource';
 import { login } from './login';
+import { logout } from './logout';
 import { openDashboard } from './openDashboard';
 import { saveDashboard } from './saveDashboard';
 import { openPanelMenuItem, PanelMenuItems } from './openPanelMenuItem';
@@ -18,6 +19,7 @@ export const Flows = {
   deleteDashboard,
   deleteDataSource,
   login,
+  logout,
   openDashboard,
   saveDashboard,
   openPanelMenuItem,
